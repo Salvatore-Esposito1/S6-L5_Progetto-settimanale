@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="scss/app.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column h-100">
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md bg-gradient fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Nome azienda <img src="img/Italy.jpg" alt="logo italia"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link" onclick="funzione()"><button class="btn btn-dark" ><i class="bi bi-brightness-high"></i></button></a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatti.html" >Contattaci</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="#footer"><i class="bi-telephone-fill"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer"><i class="bi-envelope-fill"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer"><i class="bi-whatsapp"></i></a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex-shrink-0">
+        <div class="text-center">
+        <h3 class="display-5 mt-5 pt-5 fst-italic" id="h3contatti">INCIDENT RESPONSE EMERGENCY SERVICE</h3>
+        <h4 class="display-7 pt-2 fw-bold">SEI VITTIMA DI UN ATTACCO?</h4>
+         <p class="fw-semibold">Contattaci per un aiuto immediato</p>
+         <p>Per una risposta immediata all’emergenza compila e invia questo modulo, lasciando un numero di contatto.</p>
+        </div> 
+        <div class="container">
+            <div class="row">
+                <div class="mt-7 col-md-6" >
+                <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="NOME">
+              </div>
+              <div class="mt-7 col-md-6">
+                <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="COGNOME">
+              </div>
+              <div class="mt-7 col-md-6">
+                <label for="exampleFormControlInput1" class="form-label">Società</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="SOCIETA'">
+              </div>
+              <div class="mt-7 col-md-6">
+                <label for="exampleFormControlInput1" class="form-label">Indirizzo E-mail</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-MAIL">
+              </div>
+              <div class="mt-7 col-md-6">
+                <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="TELEFONO">
+              </div>
+              <div class="mt-7 col-md-6">
+                <label for="exampleFormControlInput1" class="form-label">Nazione</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="NAZIONE">
+              </div>
+        <div class="mt-7 col-md-6">
+            <label for="exampleFormControlInput1" class="form-label">Città</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CITTA'">
+          </div>
+          <div class="mt-7 col-md-6">
+            <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="INDIRIZZO">
+          </div>
+          <div class="mb-3 mz-7 mx-auto text-center" style="width: 900px;">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="MESSAGGIO"></textarea>
+          </div>
+          <div class="d-grid gap-2 col-4 mx-auto mb-4">
+            <button class="btn btn-primary" type="button">INVIA</button>
+          </div>
+        </div>
+
+      </main> 
+      <footer class="footer mt-auto py-3 bg-primary bg-gradient text-light" id="footer">
+        <div class="container text-center">
+            <div class="row py-4">
+                <div class="col-md-3 py-4">
+                    <h3>Nome azienda <img src="img/Italy.jpg" alt="logo italia"></h3>
+                </div>
+                <div class="col-md-3">
+                    <h4>Mission & Vision</h4><i class="bi bi-globe"></i>
+                    <p>La missione di Nome azienda è quella di rendere l'Italia uno dei luoghi più cyber sicuri al mondo.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Dove siamo</h4>
+                    <i class="bi bi-geo-alt"></i><p> Palazzo San Giacomo, piazza Municipio, 80133 Napoli</p>       
+                </div>
+                <div class="col-md-3">
+                    <h4>Contatti</h4>
+                    <i class="bi-telephone-fill"></i><p> 081 7951161</p>
+                    <i class="bi-whatsapp"></i><p> (+39) 3393307434</p>
+                    <i class="bi-envelope-fill"></i><p> info@Nomeazienda.com</p>
+                </div>
+            </div>
+            <span class="text-light">&copy; Salvatore per Epicode School </span>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+</html>

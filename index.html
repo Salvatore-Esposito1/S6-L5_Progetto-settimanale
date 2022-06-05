@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="it" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nome azienda - Cyber Security</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="scss/app.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="d-flex flex-column h-100">
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-md bg-gradient fixed-top bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Nome azienda <img src="img/Italy.jpg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="funzione()"><button class="btn btn-dark" ><i class="bi bi-brightness-high"></i></button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" title="services">Servizi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contatti.html">Contattaci</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item"><a class="nav-link" href="#footer"><i class="bi-telephone-fill"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer"><i class="bi-envelope-fill"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#footer"><i class="bi-whatsapp"></i></a></li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Begin page content -->
+    <main class="flex-shrink-0">
+              <!-- prima sezione e prima cta -->
+        <button onclick="topFunction()" id="myBtn"><i class="bi bi-arrow-up display-5"></i></button>
+         <section id="first-cta" class="first-cta">
+           
+            <img src="img/cyber_security.jpg" class="img-fluid " alt="Foto Cyber" id="fotoCyber">
+            
+            <div class="container sm text-center">
+                <div class="sfondoBlu">
+                <h1 class="mt-5 fs-bold" >CYBER SECURITY</h1>
+                <p>Proteggi la tua azienda con le più evolute <br> soluzioni di Cyber Security</p>
+                <a href="contatti.html" class="btn btn-primary">Sotto attacco?</a>
+            </div>
+            </div>
+        </section>
+   
+        <!-- Servizi disponibili utilizzando le cards. Sono sei. -->
+        <section id="services" class="services text-center">
+            <div class="container">
+                <div class="row mt-5">
+                <h3 class="display-6 mt-5" id="soluzioni">// SOLUZIONI</h3>
+            </div>
+                <div class="row"> 
+                     <div class="col-md-12 col-xl-6 mt-5 mx-auto" style="width: 580px;">
+                        <i class="bi-eye"></i>
+                        <h3 class="display-6">// C SOC</h3>
+                        <p><strong>Il Cognitive Security Operation (C SOC)</strong>  di "Nome azienda" è uno degli strumenti più all’avanguardia in Italia per la protezione da minacce e rischi informatici. Grazie a un monitoraggio attivo <b>h 24, 7 giorni su 7,</b> 
+                            dei sistemi e grazie al presidio di un team di circa 30 esperti di sicurezza informatica, "Nome azienda" assicura una risposta efficace ai cyber attacchi che minacciano piccole, medie e grandi imprese.</p>
+                    </div>
+               
+                    <div class="col-md-12 col-xl-6 mt-5 mx-auto" style="width: 580px;">
+                        <i class="bi-search"></i>
+                        <h3 class="display-6">// SECURITY ASSESSMENT</h3>
+                        <p>Conoscere le vulnerabilità del proprio sistema informatico è indispensabile per mettere a punto un adeguato piano di <strong>sicurezza</strong> . Il servizio di Security Assessment non è un processo standard, utilizzato con ogni cliente secondo le stesse procedure,
+                             ma un vero e proprio “abito su misura”: ogni azienda ha necessità e vulnerabilità differenti e richiede quindi un’analisi <b>progettata</b> e costruita ad hoc.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-5 mx-auto"style="width: 600px;">
+                        <i class="bi-clipboard-data"></i>
+                        <h3 class="display-6">// CYBER THREAT INTELLIGENCE</h3>
+                        <p>L’evoluzione degli attacchi, sempre più subdoli e dinamici, e delle minacce, ormai parte integrante del tessuto digitale aziendale, ha fatto emergere i limiti degli approcci tradizionali di sicurezza. La<strong> Cyber Threat Intelligence</strong>  fornisce una versione totale, personalizzata
+                             e in tempo reale delle anomalie emergenti: acquisizione, analisi e correlazione delle informazioni su fonti aperte per offrire un quadro completo e prevenire minacce per la sicurezza nazionale.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xl-6 mt-5 mx-auto"  style="width: 580px;">
+                        <i class="bi-braces-asterisk"></i>
+                        <h3 class="display-6">// MALWARE ANALYSIS</h3>
+                        <p>Quotidianamente minacce sempre più sofisticate ed evolute mettono in crisi le tradizionali soluzioni di sicurezza, che da sole non sono in grado di assicurare una protezione completa. Attraverso l’attività di <strong> malware analysis</strong> un team di specialisti studia il ciclo di vita degli attacchi informatici
+                             condotti secondo modalità sempre nuove, sviluppando una conoscenza approfondita di strumenti e tattiche utilizzate dagli attaccanti e adeguando in maniera proattiva le strategie di prevenzione.</p>
+                    </div>             
+                    <div class="col-md-12 col-xl-6 mt-5 mx-auto" style="width: 580px;">
+                        <i class="bi-shield-check"></i>
+                        <h3 class="display-6">// ANTI-FRAUD</h3>
+                        <p>Attraverso la nostra <strong> soluzione anti-fraud </strong> assicuriamo la protezione dei servizi di online banking e di pagamento online dalle frodi informatiche. Basata sulle logiche dell’Intelligenza Artificiale, protegge in tempo reale dai rischi connessi a qualsiasi tipo di transazione, allertando, bloccando o attuando le contromisure
+                             stabilite. In ambito bancario, trova la sua naturale applicazione nella protezione dei servizi di online banking, pagamenti online, money transfer, prelievi bancomat, pagamenti POS, antiriciclaggio.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-5 mb-4 mx-auto" style="width: 600px;">
+                        <i class="bi-person-badge"></i>
+                        <h3 class="display-6">// IDENTITY MANAGEMENT</h3>
+                        <p>Per gestire le informazioni riguardanti l’identità degli utenti e controllarne l’accesso alle risorse aziendali, ti affianchiamo con soluzioni per l’autenticazione, la governance dell’identità, la gestione degli accessi. Scopri le nostre soluzioni di Identity Management e come possiamo aiutarti a snellire l’impegno del tuo comparto IT e ad aumentare 
+                            la produttività, ottimizzando l’equilibrio tra sicurezza e praticità.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inserisco la sezione delle partnerships -->
+        <section id="partnerships" class="partnerships">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0b24fb" fill-opacity="1"
+                    d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="row text-center">
+                    <h4 class="display-4 mb-4 fw-bold">Partner e alleanze strategiche</h4>
+                    <p>Lavoriamo con un ecosistema allargato di partner, enti governativi e specialisti del settore per continuare a innovare i nostri servizi di cybersecurity.</p>
+                    <div class="separator"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-sm-6 partnerships-logo"><img src="img/EndGame-logo.png" alt="logo EndGame"
+                            class="img-fluid"></div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 partnerships-logo"><img src="img/IronNet-logo.png" alt="logo IronNet"
+                            class="img-fluid"></div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 partnerships-logo"><img src="img/Microsoft-Logo.png" alt="logo Microsoft"
+                            class="img-fluid"></div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 partnerships-logo"><img src="img/Logo-Paloalto.png" alt="logo Paloalto"
+                            class="img-fluid"></div>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0b24fb" fill-opacity="1"
+                    d="M0,96L60,90.7C120,85,240,75,360,69.3C480,64,600,64,720,90.7C840,117,960,171,1080,170.7C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </section>
+
+        <!-- Posiziono la sezione delle recensioni/testimonianze -->
+        <section id="reviews" class="reviews">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#0b24fb" fill-opacity="1"
+                    d="M0,192L60,197.3C120,203,240,213,360,192C480,171,600,117,720,112C840,107,960,149,1080,149.3C1200,149,1320,107,1380,85.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="row text-center py-5">
+                    <h4 class="display-5 mb-4 fw-bold">Le opinioni dei nostri clienti</h4>
+                    <div class="separator"></div>
+                    <div class="row align-items-center">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Testimonianza 1 -->
+                                <div class="carousel-item active">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg fst-italic">
+                                            <i class="bi bi-chat-right-quote text-danger"></i><br>
+                                            "Azienda leader nel settore della sicurezza e delle infrastrutture informatiche di alto livello. Sistemi virtualizzati e clusterizzati con Microsoft e VmWare, progettazione e configurazione reti locali con apparati e sistemi Cisco, ponti radio, sistemi di backup e recovery, centro formazione, centro esami Pearson Vue, help desk su server,
+                                             il tutto in un'unica azienda formata da specialisti."</p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="img/review1.png" alt="reviews-1"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Marco Rossi</h3>
+                                    </div>
+                                </div>
+                                <!-- Testimonianza 2 -->
+                                <div class="carousel-item">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card">
+                                        <p class="lh-lg fst-italic">
+                                            <i class="bi bi-chat-right-quote text-danger"></i><br>
+                                            "Azienda sempre all'avanguardia e altamente specializzata nel comparto ICT e TLC. Professionalità e competenza al top."
+
+
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="img/review4.png" alt="reviews-2"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Samantha Loret</h3>
+                                    </div>
+                                </div>
+                                <!-- Testimonianza 3 -->
+                                <div class="carousel-item">
+                                    <!-- Inizio la creazione delle card per il carosello -->
+                                    <div class="reviews-card" >
+                                        <p class="lh-lg fst-italic" >
+                                            <i class="bi bi-chat-right-quote text-danger"></i><br>
+                                            "Professionisti della sicurezza web, consulenza impeccabile. Consigliati!"
+                                        </p>
+                                    </div>
+                                    <div class="reviews-img">
+                                        <img src="img/review7.png" alt="reviews-3"
+                                            class="img-fluid rounded-circle">
+                                    </div>
+                                    <div class="reviews-name">
+                                        <h3>Loris Righi</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" 
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-primary bg-gradient text-light" id="footer">
+        <div class="container text-center">
+            <div class="row py-4">
+                <div class="col-md-3 py-4">
+                    <h3>Nome azienda <img src="img/Italy.jpg" alt=""></h3>
+                </div>
+                <div class="col-md-3">
+                    <h4>Mission & Vision</h4><i class="bi bi-globe"></i>
+                    <p>La missione di Nome azienda è quella di rendere l'Italia uno dei luoghi più cyber sicuri al mondo.</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Dove siamo</h4>
+                    <i class="bi bi-geo-alt"></i><p> Palazzo San Giacomo, piazza Municipio, 80133 Napoli</p>       
+                </div>
+                <div class="col-md-3">
+                    <h4>Contatti</h4>
+                    <i class="bi-telephone-fill"></i><p> 081 7951161</p>
+                    <i class="bi-whatsapp"></i><p> (+39) 3393307434</p>
+                    <i class="bi-envelope-fill"></i><p> info@Nomeazienda.com</p>
+                </div>
+            </div>
+            <span class="text-light">&copy; Salvatore per Epicode School </span>
+        </div>
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+   
+</body>
+
+</html>

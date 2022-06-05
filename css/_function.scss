@@ -1,0 +1,27 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$background: rgb(255, 255, 255); //colore nero se la luminosità del background è maggiore di 50, se è minore colore bianco.                 
+
+@function testo($background) {
+  @if(lightness($background) > 50) {
+    @return #000;   
+  } @else {
+    @return #FFF;
+  }
+}
+
+@mixin coloreDinamico($color) {
+  background: $color;
+  color: testo($color);
+}
+
+body {
+  @include coloreDinamico($background);
+}
+
+
+ // CLASSE PER IL PULSANTE DARK MODE DELLA HOME PAGE
+.dark-mode {
+  background-color: #151515;
+  color: #FFF;
+ } 
